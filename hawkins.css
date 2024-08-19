@@ -1,0 +1,260 @@
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: brown;
+    background-color: orangered;
+    transition: all 1s;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.profile-pic {
+    width: 80%;
+    border-radius: 150%;
+    margin-bottom: 20px;
+    box-shadow: 0px 15px 10px rgb(185, 109, 11);
+}
+
+.profile-pic:hover {
+    transform: scale(1.5);
+}
+
+.sidebar h1, .sidebar h2 {
+    margin: 0;
+}
+
+.sidebar p {
+    margin: 10px 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
+
+section 
+{    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+#resume a {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem; /* Adjust the padding for smaller button */
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: background 0.3s ease;
+    font-size: 0.9rem; /* Optional: Adjust the font size if needed */
+}
+
+.s1
+{
+  color: var(--color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+
+}
+.s1 label{
+  color: var(black);
+}
+.s label{
+  color: var(blue);
+}
+.s2{
+  color: var(--color);
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.s3
+{
+  color: var(--color);
+  font-weight: 600;
+}
+.skills p{
+  font-size: xx-large;
+}
+
+.skill:hover {
+  background: var(--color);
+}
+
+.progress-bar {
+  background: #1e7781be;
+  border-radius: 5px;
+  height: 9px; 
+  width: 90%;
+  margin-top: 0.2rem;
+}
+
+.progress {
+  background: yellowgreen;
+  height: 100%;
+  text-align: right;
+}    
+
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #407b81;
+    text-transform: uppercase;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #635e30;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #7ab6d2;
+}
+
+.project p {
+    font-size: 16px;
+    color: #279757;
+}
+
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: #76c7c0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: green;
+}
+
+#about-me,#edu,#skills,#pro,#contact{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.main-content{
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    .project h3{
+        font-weight: 50;
+    }
+}
